@@ -1,0 +1,39 @@
+.container {
+    padding: 10px 200px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    height:100px;
+    align-items: center;
+    .left {
+        width: 300px;
+        font-family: emoji;
+        font-weight: bolder;
+        p:nth-child(1) {
+            color: white;
+            
+        }
+        p:nth-child(2) {
+            color: darkgoldenrod;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .right {
+            display: none;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .right {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            text-align: center;
+            li {
+                cursor: pointer;
+            }
+        }
+    }
+    
+    
+
+}
